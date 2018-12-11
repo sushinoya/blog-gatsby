@@ -67,3 +67,26 @@
         }
     }
 }
+
+.sidebar__description {
+    text-align: justify;
+}
+
+.sidebar__copyright {
+    text-align: center;
+}
+
+.sidebar__author-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar__author-subtitle {
+    margin: 0px;
+}
+
+.sidebar__author-title {
+    margin: 5px;
+}

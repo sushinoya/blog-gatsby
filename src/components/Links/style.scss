@@ -2,26 +2,27 @@
 @import "../../assets/scss/mixins";
 
 .links {
-    @include margin-bottom(1);
     &__list {
         display: flex;
+        justify-content: center;
+        align-items: center;
         list-style: none;
         padding: 0;
-        margin: 10px -3px;
+        margin: 2px -3px;
         &-item {
             padding: 0;
             margin: 0 3px;
-            height: 24px;
-            width: 24px;
-            line-height: 24px;
-            border-radius: 3px;
+            height: 35px;
+            width: 35px;
+            line-height: 35px;
+            border-radius: 10px;
             text-align: center;
-            background: $color-gray-bg;
+            background: #f6f6f6;
             & a {
                 border: 0;
                 & i {
-                    font-size: 14px;
-                    color: lighten($color-base, 20%);
+                    font-size: 20px;
+                    color: lighten($color-base, 25%);
                 }
                 &:hover,
                 &:focus {

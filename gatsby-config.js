@@ -3,11 +3,12 @@ const pxtorem = require('postcss-pxtorem')
 
 module.exports = {
   siteMetadata: {
-    url: 'https://lumen.netlify.com',
-    title: 'Blog by John Doe',
+    url: 'https://blog.sushinoya.io',
+    title: "Suyash's Blog",
+    description: 'Hi! I am a Computer Science undergraduate at the National University of Singapore. This blog is a repository of my rants and essays on anything and everything.',
     subtitle:
-      'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-    copyright: '© All rights reserved.',
+      'learning how to learn',
+    copyright: '© Suyash Shekhar',
     disqusShortname: '',
     menu: [
       {
@@ -24,11 +25,11 @@ module.exports = {
       },
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      name: 'Suyash Shekhar',
+      email: 'suyash@nushackers.org',
+      telegram: 'sushinoya',
+      twitter: 'sushiomnomnom',
+      github: 'sushinoya',
       rss: '#',
       vk: '#',
     },

@@ -13,13 +13,16 @@ class Sidebar extends React.Component {
       author,
       subtitle,
       copyright,
+      description,
       menu,
     } = this.props.data.site.siteMetadata
+
+    console.log(this.props.data.site.siteMetadata)
     const isHomePage = get(location, 'pathname', '/') === '/'
 
     /* eslint-disable jsx-a11y/img-redundant-alt */
     const authorBlock = (
-      <div>
+      <div className="sidebar__author-block">
         <Link to="/">
           <img
             src={profilePic}
@@ -50,12 +53,13 @@ class Sidebar extends React.Component {
     return (
       <div className="sidebar">
         <div className="sidebar__inner">
-          <div className="sidebar__author">{authorBlock}</div>
-          <div>
-            <Menu data={menu} />
-            <Links data={author} />
-            <p className="sidebar__copyright">{copyright}</p>
+          <div className="sidebar__author">
+            {authorBlock}
+            <p className="sidebar__description">{description}</p>
           </div>
+          {/* <Menu data={menu} /> */}
+          <Links data={author} />
+          <p className="sidebar__copyright">{copyright}</p>
         </div>
       </div>
     )

@@ -2,6 +2,8 @@
 @import "../../assets/scss/mixins";
 
 .post {
+    border-bottom: 1px solid #d1d1d1;
+
     @include margin-bottom(1.25);
     &:last-child {
         @include margin-bottom(.5);
