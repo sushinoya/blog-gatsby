@@ -1,33 +1,24 @@
 ---
-title: Upgraded to Gatsby v2
-date: "2018-10-18T16:51:00.000Z"
+title: "[WIP] Make your own Language Server!"
+date: "2018-12-12T16:51:00.000Z"
 layout: post
 draft: false
-path: "/posts/upgraded-to-gatsby-v2/"
-category: "Gatsby"
+path: "/posts/make-your-own-lsp/"
+category: "Programming"
 tags:
-  - "Gatsby"
-  - "Web Development"
-description: "This starter has been forked and upgraded to Gatsby v2"
+  - "LSP"
+  - "Programming Languages"
+description: "Learn what the Langauge Server Protocol is and how you can too make your own LSP Server and use it with Visual Studio Code."
 ---
 
-This is a Gatsby v2 compatible version of the
-[lumen](https://github.com/alxshelepenok/gatsby-starter-lumen) starter, started
-by the folks at [Gatsby Central](https://www.gatsbycentral.com/).
+## What is LSP?
+LSP stands for Language Server Protocol. To understand what it is, lets take a step back and observe our programming environments. Many of us write code using an **IDE (Integrated Development Environment)** such as Eclipse or IntelliJ IDEA. These IDEs are equipped with some awesome functionalities such as tools for mass refactoring, finding unused blocks of code, code completions, detecting duplication and so much more. The rest of us use a **text editor** such as Visual Studio Code, Atom, Sublime, vim, emacs etc. Most of us use both depending on which language we are programming in.
 
-Here's a little recommended reading for Gatsby v2.
 
-* First, [what's new in v2](https://www.gatsbycentral.com/whats-new-in-gatsby-v2)
-* Next, [when should I upgrade?](https://www.gatsbycentral.com/when-should-i-upgrade-to-gatsby-v2)
-* [The Gatsby v2 announcement blog post](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/)
 
-If you **do decide to upgrade**, these articles will help you do that.
 
-* [Getting started with Gatsby v2](https://www.gatsbycentral.com/getting-started-with-gatsby-v2)
-* [Should I rebuild my site for Gatsby v2?](https://www.gatsbycentral.com/should-i-rebuild-my-site-for-gatsby-v2)
-* [How do layouts work in Gatsby v2](https://www.gatsbycentral.com/how-do-layouts-work-in-gatsby-v2)
-* [StaticQuery in Gatsby v2](https://www.gatsbycentral.com/staticquery-in-gatsby-v2)
-
-Finally, here's a cheat sheet we prepared to help during the upgrade:
-
-* [Gatsby v2 refactoring cheat sheet](https://www.gatsbycentral.com/gatsby-v2-refactoring-cheat-sheet)
+## References
+- [List of Language Servers](https://langserver.org/)
+- [VSCode Example Language Server](https://code.visualstudio.com/docs/extensions/example-language-server)
+- [Microsoft - Official Language Server Protocol](https://microsoft.github.io/language-server-protocol/)
+- [Eclipse Foundation - Language Server Protocol](https://www.youtube.com/watch?v=2GqpdfIAhz8)
