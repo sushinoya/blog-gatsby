@@ -5,11 +5,11 @@ module.exports = {
   siteMetadata: {
     url: 'https://blog.sushinoya.io',
     title: "Suyash's Blog",
-    description: 'Hi! I am a Computer Science undergraduate at the National University of Singapore. This blog is a repository of my rants and essays on anything and everything.',
-    subtitle:
-      'learning how to learn',
+    description:
+      'Hi! I am a Computer Science undergraduate at the National University of Singapore. This blog is a repository of my rants and essays on anything and everything.',
+    subtitle: 'learning how to learn',
     copyright: '© Suyash Shekhar',
-    disqusShortname: '',
+    disqusShortname: 'blog-wfczgz63wh',
     menu: [
       {
         label: 'Articles',

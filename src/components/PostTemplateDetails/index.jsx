@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import moment from 'moment'
 import Disqus from '../Disqus/Disqus'
 import './style.scss'
+import SharePanel from '../SharePanel'
 
 class PostTemplateDetails extends React.Component {
   render() {
@@ -42,6 +43,10 @@ class PostTemplateDetails extends React.Component {
       </div>
     )
 
+    const sharePanel = <SharePanel title={post.frontmatter.title} description={post.frontmatter.description} tags={post.frontmatter.tags} category={post.frontmatter.title} />
+    
+    console.log(post.frontmatter)
+
     return (
       <div>
         {homeBlock}
@@ -61,17 +66,8 @@ class PostTemplateDetails extends React.Component {
           </div>
           <div className="post-single__footer">
             {tagsBlock}
+            {sharePanel}
             <hr />
-            {/* <p className="post-single__footer-text">
-              {subtitle}
-              <a
-                href={`https://twitter.com/${author.twitter}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <br /> <strong>{author.name}</strong> on Twitter
-              </a>
-            </p> */}
             {commentsBlock}
           </div>
         </div>
