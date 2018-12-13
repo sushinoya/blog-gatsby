@@ -16,16 +16,18 @@ Many of us write code using an **IDE (Integrated Development Environment)** such
 
 Traditional compilers had only one task - take in a valid program and execute it. Moern compilers however are very different. Not only do they need to execute a valid program, they also need to handle incomplete or invalid syntax and provide tools to IDEs and powerful editors to highlight mistakes or suggest improvements/corrections etc. This is why Eclipse created its own Java compiler which could provide a set of tools which complimented their IDE. The already existing Sun Microsystems Java compiler did not provide such functionalities The developers of IntelliJ IDEA also reimplemented major parts of the Java compiler.
 
-So, say that you decide to make your own IDE or text editor tomorrow and you need great tool support for multiple languages. Is the only option you have is to reimplement parts of every language you support? What a sad life that must be! Language Server Protocol comes to the rescue here.
+So, say that you decide to make your own IDE or text editor and you need good tool support for multiple languages. Is the only way available to reimplement parts of every language's compiler you support? What a sad life that must be! Language Server Protocol comes to the rescue here.
 
 ## Language Server Protocol - the savior!
-The concept of a LSP is simple - alongside the text editor, we run a server locally which can be queried by the editor for language support. The protocol they interact with is called the Language Server Protocol.
+The concept of a LSP is simple - alongside the text editor, we run a server locally which can be queried by the editor for language support. The protocol that the editor and the server interact using is called the **Language Server Protocol**.
 
 ![Basic LSP Introduction](./lsp-intro.png)
 
-So how is this better? Well, LSP provides a standard protocol to interact with language servers. Which means that any new text editor only needs to support LSP. And magically, it will be able to use all the already existing language servers out there! If you were to make a new language and hoped that all editors out there would support it, all you now have to do is implement a LSP-compliant language server for the language and voilà, all text editors which support LSP will now be able to provide language suport for your new language!
+So how is this better? Well, LSP provides a standard protocol to interact with language servers. Which means that any new text editor only needs to support LSP and it automatically will be able to use all the already existing language servers out there. If you were to make a new language and wished that all editors out there would provide tool support for it, all you have to do is to implement a LSP-compliant language server for your language and voilà, all text editors which support LSP will now be able to provide language suport for your new language!
 
-## LSP Request/Response Example
+## A Simple LSP Request
+
+
 
 
 
