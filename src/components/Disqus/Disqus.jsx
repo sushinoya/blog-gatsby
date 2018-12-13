@@ -41,7 +41,7 @@ class Disqus extends Component {
     )
 
     const turnOffComments = (
-      <p>
+      <p className="centeredText">
         Don&apos;t wish to see disqus destroy the tranquility of the page?{' '}
         <a onClick={this.toggleComments}>Hide comments</a>.
       </p>
